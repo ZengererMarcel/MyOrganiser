@@ -6,8 +6,9 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    background: rgb(2,0,36);
-    background: linear-gradient(21deg, rgba(2,0,36,1) 0%, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+    background: whitesmoke;
+    font-family: Arial, sans-serif;
+    /*background: linear-gradient(21deg, rgba(2,0,36,1) 0%, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);*/
 }
 
 /* Center the content in the browser window */
@@ -21,6 +22,7 @@ html, body {
 }
 
 .head {
+    font-weight: bold;
     position: fixed;
     width: 100%;
     display: block;
@@ -55,4 +57,53 @@ html, body {
     top: 5%;
     left: 10px;
     font-size: 30px;
+}
+
+
+.fixed{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    height: 7%;
+    border-top: 1px solid black;
+}
+
+.container {
+    display: flex;
+    justify-content:space-around;
+}
+
+.link{
+    margin-top: 2%;
+}
+
+.task{
+    display: flex;
+    justify-content:space-around;
+    background: lightgrey;
+    border-bottom: 1px solid;
+    border-color: black;
+}
+
+.grey-background {
+    margin-top: 2%;
+    background: lightgrey;
+    paddign-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.left{
+    margin-left: 5%;
+    padding-top: 1.5%;
+    line-height: 5%;
+}
+
+.right{
+    margin-right: 5%;
+}
+
+.container-left {
+    display: flex;
+    justify-content:space-between;
 }
