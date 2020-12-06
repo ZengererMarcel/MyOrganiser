@@ -4,6 +4,9 @@ function addElement () {
 
     var element = document.createElement("div");
     element.id = 't' + tasknumber;
+    element.style.backgroundColor = "#93de80";
+    element.style.borderRadius = "20px";
+    element.style.border
     element.style.left = "5%";
     element.style.right = "5%";
     element.style.border = "thin solid black";
