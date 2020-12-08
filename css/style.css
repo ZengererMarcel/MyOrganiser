@@ -123,6 +123,11 @@ input{
     text-align: center;
 }
 
+.addImg {
+    position: relative;
+    bottom: 30px;
+}
+
 /* Logo MyOrganiser */
 
 .middle-Logo{
