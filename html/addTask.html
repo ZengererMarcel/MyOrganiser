@@ -31,8 +31,9 @@
     <br>
 
     <div class="grey-background">
-        <label>
-            <input class="left" type="text" value="Titel" minlength="1" required>
+        <label class="left">
+            Titel
+            <input class="left" type="text" minlength="1" required>
         </label>
     </div>
 
@@ -40,26 +41,26 @@
          <label class="left">
             Beginn
             <input class="center" type="date" value="2020-01-01" min="1910-01-01" max="2020-12-31" required>
-            <input class="right" type="time" value="00:00" required>
+            <input class="rightInput" type="time" value="00:00" required>
         </label>
     </div>
 
     <div class="grey-background">
-        <label>
+        <label class="left">
             Ende
-            <input class="right" type="time" value="00:00" required>
+            <input class="rightInput" type="time" value="00:00" required>
         </label>
     </div>
 
-    <div class="grey-background">
-        <label>
-            Notiz
-            <input class="node" type="text">
-        </label>
+    <div class="grey-background2">
+        <div class="leftRelative">
+        <p >Notiz</p>
+        <textarea class="node" type="text"></textarea>
+        </div>
     </div>
 
     <div class="grey-background">
-        <label>
+        <label class="left">
             Priorität
             <select>
                 <option value="p1">0</option>
