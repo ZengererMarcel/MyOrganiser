@@ -116,18 +116,19 @@ function addElement () {
 
     longInfo.appendChild(selectPrio);
 
-
-    var edit = document.createElement("p");
-    edit.innerHTML = "B";
+    const edit = document.createElement("img");
+    edit.src = "img/pencil.png";
     edit.style.left = "75%";
-    edit.style.top = "85px";
+    edit.style.top = "100px";
+    edit.style.height = "25px";
     edit.style.position = "absolute";
     longInfo.appendChild(edit);
 
-    var clear = document.createElement("p");
-    clear.innerHTML = "L";
+    const clear = document.createElement("img");
+    clear.src = "img/trash.png";
     clear.style.left = "90%";
-    clear.style.top = "85px";
+    clear.style.top = "100px";
+    clear.style.height = "25px";
     clear.style.position = "absolute";
     clear.onclick = function () {
         document.getElementById(this.parentNode.parentNode.id).remove();
@@ -147,6 +148,7 @@ function loadTasks(){
 }
 
 window.addEventListener("load", function() {
+    // Vordefinierte tasks
     addElement();
     addElement();
     addElement();
