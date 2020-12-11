@@ -4,8 +4,6 @@
     <head>
 
         <link rel="stylesheet" href="../css/style.css">
-        <script src="../js/date.js" defer></script>
-        <script src="../js/task.js" defer></script>
 
         <meta charset="UTF-8">
 
@@ -23,9 +21,9 @@
 
     <body>
     <div class="task">
-        <a href="../index.html" class="link">< zurück</a>
+        <a href="../index.html" class="back">< zurück</a>
         <h1>Hinzufügen</h1>
-        <a href="../index.html" class="link">Speichern</a>
+        <a href="../index.html" class="save">Speichern</a>
     </div>
 
     <br>
@@ -33,36 +31,36 @@
     <div class="grey-background">
         <label class="left">
             Titel
-            <input class="left" type="text" minlength="1" required>
+            <input class="left" id="titel" type="text" minlength="1" required>
         </label>
     </div>
 
     <div class="grey-background">
          <label class="left">
             Beginn
-            <input class="center" type="date" value="2020-01-01" min="1910-01-01" max="2020-12-31" required>
-            <input class="rightInput" type="time" value="00:00" required>
+            <input class="center" id="day" type="date" value="2020-01-01" min="1910-01-01" max="2020-12-31" required>
+            <input class="rightInput" id="start" type="time" value="00:00" required>
         </label>
     </div>
 
     <div class="grey-background">
         <label class="left">
             Ende
-            <input class="rightInput" type="time" value="00:00" required>
+            <input class="rightInput" id="end" type="time" value="00:00" required>
         </label>
     </div>
 
     <div class="grey-background2">
         <div class="leftRelative">
         <p >Notiz</p>
-        <textarea class="node" type="text"></textarea>
+        <textarea class="node" id="node" type="text"></textarea>
         </div>
     </div>
 
     <div class="grey-background">
         <label class="left">
             Priorität
-            <select>
+            <select id="prio">
                 <option value="p1">0</option>
                 <option value="p1">1</option>
                 <option value="p1">2</option>

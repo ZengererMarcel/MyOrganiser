@@ -149,6 +149,10 @@ function loadTasks(){
 window.addEventListener("load", function() {
     addElement();
     addElement();
+    addElement();
+    addElement();
+    addElement();
+    addElement();
     loadTasks();
 });
 
