@@ -1,6 +1,6 @@
 /* Make content area fill the entire browser window */
 html, body {
-
+    overflow: hidden;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -31,6 +31,7 @@ html, body {
     display: block;
     height: 10%;
     border-bottom: 1px solid black;
+    z-index: 1;
 }
 
 .tasks {
@@ -42,23 +43,29 @@ html, body {
 }
 
 .right {
-    float: right;
-    margin-right: 10px;
-    margin-top: 30px;
+    position: absolute;
+    right: 3%;
+    top: 25%;
+    height: 50%;
 }
 
 .date{
-    float: left;
     position: absolute;
-    top: 5%;
-    left: 10px;
-    font-size: 30px;
+    margin: 0;
+    Bottom: 5%;
+    left: 5%;
+
 }
 
+.relative {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
 
 .menue{
     position:fixed;
-    bottom: 0%;
+    bottom: 0;
     width: 100%;
     display: block;
     height: 7%;
@@ -104,7 +111,6 @@ html, body {
     position: relative;
     width: 100%;
     height: 4%;
-    paddign-top: 0.5%;
     padding-bottom: 0.5%;
 }
 
@@ -113,7 +119,6 @@ html, body {
     background: lightgrey;
     position: relative;
     width: 100%;
-    paddign-top: 0.5%;
     padding-bottom: 0.5%;
 }
 
@@ -127,8 +132,7 @@ input{
 
 .center{
     position: absolute;
-    margin-right: 15%;
-    margin-left: 15%;
+    margin-left: 25%;
     width: 30%;
 }
 
@@ -148,7 +152,7 @@ label{
 .left{
     position: absolute;
     margin-left: 5%;
-    width: 100%;
+    width: 90%;
 }
 
 .leftRelative{
@@ -159,13 +163,12 @@ label{
 
 .rightInput{
     position: absolute;
-    right: 10%;
+    right: 0;
 }
 
 .node{
     position: relative;
     width: 90%;
-    rows: 2;
 }
 /* Logo MyOrganiser */
 
@@ -177,4 +180,10 @@ label{
     position: fixed;
     text-align: center;
     color: grey;
+}
+
+.taskbarImages{
+    position: relative;
+    height: 80%;
+    top: 10%;
 }

@@ -1,6 +1,6 @@
 var tasknumber = 1;
 
-function addElement () {
+function addElement  () {
 
     var element = document.createElement("div");
     element.id = 't' + tasknumber;
@@ -24,10 +24,10 @@ function addElement () {
     checkbox.setAttribute("type", "checkbox");
     checkbox.style.position = "absolute";
     checkbox.style.float = "left";
-    checkbox.style.height = "15px";
-    checkbox.style.width = "15px";
+    checkbox.style.height = "20px";
+    checkbox.style.width = "20px";
     checkbox.style.left = "2%";
-    checkbox.style.top = "15px";
+    checkbox.style.top = "10px";
     shortInfo.appendChild(checkbox);
 
     var timespan = document.createElement("p");
@@ -67,8 +67,6 @@ function addElement () {
     longInfo.style.left = "5%";
     longInfo.style.right = "5%";
     longInfo.style.top = "20%";
-    //longInfo.id = "0";
-    //longInfo.style.display = "none";
 
     var lNote = document.createElement("p");
     lNote.innerHTML = "Notiz:";

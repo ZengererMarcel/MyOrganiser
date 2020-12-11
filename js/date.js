@@ -45,7 +45,7 @@ function handleTouchMove(evt) {
 
 }
 
-function handleTouchEnd(evt) {
+function handleTouchEnd() {
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {
         if ( xDiff > 60 ) {
             dd++;
@@ -110,7 +110,7 @@ function refreshDate(){
     }
 
     day = weekday[newDay];
-    today = day + ', ' + dd + '.' + mm + '.' + year;
+    today = day.substr(0, 2) + ', ' + dd + '.' + mm + '.' + year;
     document.getElementById("date").innerHTML = today;
 }
 
