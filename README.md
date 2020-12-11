@@ -5,7 +5,7 @@ by Marcel Zengerer, Sarah Graschl
 
 A two-screen organizer where you can see the provisionally use of our app MyOrganiser. 
 
-First Screen: home screen with tods for the day. Swipe left/right for another day.
+First Screen: home screen with tods for the day. Swipe left/right for another day.  
 Second Screen: add a screen where new data can be typed in.
 
 Dummy data: We are using dammy data right now.
