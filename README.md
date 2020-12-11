@@ -12,8 +12,11 @@ Dummy data: We are using dammy data right now.
 
 * Files:
 	css: style.css
+	
 	html: index.html, addTask.html
+	
 	img: calender.png, die-einstellungen.png, down-arrow.png, graph.png, pencil.png, plus--v1.png, trash.png
+	
 	js: data.js, task.js
 	
 * [Referenz](https://github.com/ZengererMarcel/MyOrganiser) 
