@@ -1,6 +1,4 @@
-var tasknumber = 1;
-
-function addElement  () {
+function addElement  ( tasknumber) {
 
     var element = document.createElement("div");
     element.id = 't' + tasknumber;
@@ -137,22 +135,24 @@ function addElement  () {
     element.appendChild(longInfo);
     document.getElementById('tasks').appendChild(element);
 
-    tasknumber++;
-
 }
 
-function loadTasks(){
-
+function newElement(){
+    localStorage["taskNumber"] = parseInt(localStorage["taskNumber"]) + 1;
 }
 
-window.addEventListener("load", function() {
-    // Vordefinierte tasks
-    addElement();
-    addElement();
-    addElement();
-    addElement();
-    addElement();
-    addElement();
-    loadTasks();
-});
+if(location.pathname.split("/").slice(-1)[0] === "index.html") {
+    window.addEventListener("load", function () {
+
+        if (localStorage["taskNumber"] === undefined)
+            localStorage["taskNumber"] = 5
+
+        var localtasknumber = localStorage["taskNumber"];
+        console.log(localStorage["taskNumber"]);
+
+        for (var i = 0; i < localtasknumber; i++) {
+            addElement(localtasknumber);
+        }
+    });
+}
 
