@@ -121,7 +121,7 @@ html, body {
     width: 100%;
     padding-bottom: 0.5%;
 }
-
+/*
 input{
     position: absolute;
     height: 100%;
@@ -129,11 +129,17 @@ input{
     background-color: lightgrey;
     border-color: lightgrey;
 }
+*/
 
 .center{
     position: absolute;
     margin-left: 25%;
     width: 30%;
+    position: absolute;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: lightgrey;
+    border-color: lightgrey;
 }
 
 .addImg {
@@ -153,6 +159,11 @@ label{
     position: absolute;
     margin-left: 5%;
     width: 90%;
+    position: absolute;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: lightgrey;
+    border-color: lightgrey;
 }
 
 .leftRelative{
@@ -164,6 +175,11 @@ label{
 .rightInput{
     position: absolute;
     right: 0;
+    position: absolute;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: lightgrey;
+    border-color: lightgrey;
 }
 
 .node{
@@ -186,4 +202,24 @@ label{
     position: relative;
     height: 80%;
     top: 10%;
+}
+
+/* Settings */
+
+.padding-headline{
+    padding-left: 5%;
+    padding-right: 5%;
+    background: #b8b8b8;
+}
+
+.padding{
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 14px;
+    background-color:lightgrey;
+}
+
+.settings{
+    font-size:22px;
+    position:center;
 }
