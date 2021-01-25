@@ -213,10 +213,9 @@ label{
 }
 
 .padding{
-    padding-left: 5%;
-    padding-right: 5%;
     font-size: 14px;
     background-color:lightgrey;
+    padding: 2% 5%;
 }
 
 .settings{
