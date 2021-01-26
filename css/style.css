@@ -10,6 +10,10 @@ html, body {
     /*background: linear-gradient(21deg, rgba(2,0,36,1) 0%, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);*/
 }
 
+h1{
+    font-size: 26px;
+}
+
 /* Center the content in the browser window */
 .container {
     position: relative;
@@ -219,6 +223,10 @@ label{
 }
 
 .settings{
-    font-size:22px;
+    font-size:23px;
     position:center;
+}
+
+.box{
+    width: 10%;
 }
